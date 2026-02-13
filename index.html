@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Adam, Wierzbanowski">
+  <title>Pozycjonowanie elementów w CSS</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pozycjonowanie elementów w CSS</h1>
+    <p>Przegląd właściwości position</p>
+  </header>
+
+  <main>
+    <section id="position">
+      <h2>1. Właściwość <code>position</code></h2>
+      <p>Właściwość <a href="#position"><code>position</code></a> wpływa na ułożenie elementów na stronie internetowej.</p>
+      <p>Może posiadać wartość:</p>
+      <ul>
+        <li><a href="#static"><code>static</code></a></li>
+        <li><a href="#relative"><code>relative</code></a></li>
+        <li><a href="#fixed"><code>fixed</code></a></li>
+        <li><a href="#absolute"><code>absolute</code></a></li>
+        <li><a href="#sticky"><code>sticky</code></a></li>
+      </ul>
+    </section>
+
+    <section id="static">
+      <h2>2. Wartość <code>static</code></h2>
+      <p>Wartość <a href="#static"><code>static</code></a> jest domyślną wartością właściwości <a href="#position"><code>position</code></a>.</p>
+      <p>Element pod wpływem tej wartości jest upozycjnowany normalnie.</p>
+    </section>
+    
+    <section id="relative">
+      <h2>3. Wartość <code>relative</code></h2>
+      <p>Element pod wpływem tej wartości jest upozycjonowany w dowolnym miejscu na stronie za pomocą właściwości:</p>
+      <ul>
+        <li><code>left</code></li>
+        <li><code>top</code></li>
+        <li><code>right</code></li>
+        <li><code>bottom</code></li>
+      </ul>
+      <p>Element jest traktowany jakby dalej był w pierwotnym miejscu. Jest jedynie wyświetlany w innej pozycji.</p>
+    </section>
+    
+    <section id="fixed">
+      <h2>4. Wartość <code>fixed</code></h2>
+      <p>Element pod wpływem tej wartości jest upozycjonowany w dowolnym miejsu względem okna przeglądarki. Aby ustawić jego pozycje używamy właściwości:</p>
+      <ul>
+        <li><code>left</code></li>
+        <li><code>top</code></li>
+        <li><code>right</code></li>
+        <li><code>bottom</code></li>
+      </ul>
+      <p>Element jest traktowany jakby nie zajmował miejsca na stronie</p>
+    </section>
+    
+    <section id="absolute">
+      <h2>5. Wartość <code>absolute</code></h2>
+      <p>Element pod wpływem tej wartości jest upozycjonowany w dowolnym miejsu względem przodka. Aby ustawić jego pozycje używamy właściwości:</p>
+      <ul>
+        <li><code>left</code></li>
+        <li><code>top</code></li>
+        <li><code>right</code></li>
+        <li><code>bottom</code></li>
+      </ul>
+      <p>Element jest traktowany jakby nie zajmował miejsca na stronie</p>
+    </section>
+    
+    <section id="sticky">
+      <h2>6. Wartość <code>sticky</code></h2>
+      <p>Tak jak w przypadku wartości <a href="#relative"><code>relative</code></a>, element pod wpływem tej wartości jest upozycjonowany w dowolnym miejscu na stronie za pomocą właściwości:</p>
+      <ul>
+        <li><code>left</code></li>
+        <li><code>top</code></li>
+        <li><code>right</code></li>
+        <li><code>bottom</code></li>
+      </ul>
+      <p>Gdy element normalnie wyjechałby poza okno (podczas scrollowania), element "przyklei" się do okna i będzie przewijał razem z nim (jak w przypadku wartości <a href="#fixed"><code>fixed</code></a>).</p>
+      <p>Element jest traktowany jakby dalej był w pierwotnym miejscu. Jest jedynie wyświetlany w innej pozycji.</p>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>Pozycjonowanie elementów w CSS</p>
+  </footer>
+
+</body>
+</html>
